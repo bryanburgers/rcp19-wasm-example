@@ -45,6 +45,7 @@ fn top_level(input: &[u8]) -> ResponseJson {
         }
     };
 
+    // Parse the JSON into our strongly-typed RequestJson struct
     let request = match serde_json::from_str::<RequestJson>(input) {
         Ok(input) => input,
         Err(err) => {
@@ -52,6 +53,7 @@ fn top_level(input: &[u8]) -> ResponseJson {
         }
     };
 
+    // And then do the real work
     match super::evaluate_expression(
         request.expression,
         request.value,
