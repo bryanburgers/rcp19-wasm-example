@@ -40,7 +40,7 @@ demarshalling and far less time on what RCP19 is or how to use the
 
 #### Install Rust
 
-Install Rust by going to [https://rustup.rs] and following the instructions.
+Install Rust by going to [rustup.rs] and following the instructions.
 
 #### Install the WebAssembly target
 

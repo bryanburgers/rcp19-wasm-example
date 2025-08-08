@@ -72,7 +72,7 @@ async function main() {
   console.log(`  Total bathrooms: ${bathroomsTotalIntegerThree}`);
 
   // Evaluate the same expression with different data!
-  const bathroomsTotalIntegerFour = await evaluate(
+  const bathroomsTotalIntegerFour = evaluator.evaluate(
     bathroomsTotalIntegerExpression,
     {
       BathroomsFull: 2,
@@ -82,7 +82,7 @@ async function main() {
   console.log(`  Total bathrooms: ${bathroomsTotalIntegerFour}`);
 
   // Evaluate another one!
-  const nowTwo = await evaluate(`.NOW.`);
+  const nowTwo = evaluator.evaluate(`.NOW.`);
   console.log(`  Now: ${nowTwo}`);
 }
 
